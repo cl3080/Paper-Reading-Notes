@@ -8,3 +8,10 @@ In a typical recommendation system, the architecture usually has two stages: **c
 2. **Ranking:** find dozens of items from hundrends of items and recommend them to users, accuracy is imporant
 
 Note: in recent applications, some systems might have a middle stage between canidate generation and ranking.
+
+Let break down the system and explain these two stages one by one.
+
+## Candidate Generation
+Features: **watch vector**, **search vector**, geographic embeddng, **example age**, etc
+
+Watch vector is the taking the average of vectors for historical watched video vectors. The video vector is the embedding vectors trained from the model. Similar for search vectors.
