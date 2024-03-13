@@ -15,3 +15,5 @@ Let break down the system and explain these two stages one by one.
 Features: **watch vector**, **search vector**, geographic embeddng, **example age**, etc
 
 Watch vector is the taking the average of vectors for historical watched video vectors. The video vector is the embedding vectors trained from the model. Similar for search vectors.
+
+Example age is an important feature introduced in this work to consider the freshness of the video. Typically, users prefer fresh content. The age of the video is used during training. **This feature is set to zero when predicting** so that the prediction is made at the very end of the time window.
